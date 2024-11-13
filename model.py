@@ -22,7 +22,7 @@ pipeline = transformers.pipeline(
 
 def solve_math_problem(question):
     with torch.no_grad():
-        sequences = pipeline(
+        sequences = pipeline(  
             f'Solve this math problem: {question}',
             do_sample=True,
             top_k=10,
