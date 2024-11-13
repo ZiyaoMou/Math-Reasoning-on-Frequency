@@ -12,7 +12,7 @@ answers = {}
 
 import torch
 model_name = "meta-llama/Llama-2-7b-chat-hf"
-login("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")
+login("**")
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
